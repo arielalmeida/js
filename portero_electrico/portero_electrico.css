@@ -1,0 +1,68 @@
+  body{
+    background-image: url(brick-wall-1245825_1920.jpg);
+  }
+  .container{
+    padding-top: 10px;
+    text-align: center;
+    background: rgba(247,247,247,1);
+    
+}    
+  #caja1{
+      width: 250px;
+      height: 300px;
+  } 
+  #largo{
+      width: 170px;
+      height: 70px;
+      text-align: center;
+ }
+#formulario{
+    padding-bottom: 50px;
+    height: 150px;
+    border:inset;
+    border-width: 10px;
+}
+.row{
+    border:inset;
+    border-width: 10px;
+}
+.col-sm-4{
+    border:inset;
+    border-width: 10px;
+    text-align: center;
+}
+
+  .btn {
+    border: double;
+  }   
+  .btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 40px;
+    line-height: 1;
+    border: double;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 6;
+    
+}
+.rounded-pill{
+    width: 200px;
+    height: 120px;
+    border: double;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: black;
+    font-size: 30px;
+    color: lightcyan;
+    
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="clase_07_js.js"></script>
+</head>
+<body>
+    <div>
+        <input type="number" id="multiplicar1" placeholder="Ingrese num1">
+        <input type="number" id="multiplicar2" placeholder="Ingrese num2">
+        <button onclick="multiplicarValores(document.getElementById('multiplicar1').value , document.getElementById('multiplicar2').value)"> Multiplicar </button>
+        <p>El resultado es = <span id="resultado"></span> </p>
+        
+    </div>
+
+    <hr/>
+
+    <div>
+        <input type="number" id="num1" placeholder="Ingrese num1">
+        <input type="number" id="num2" placeholder="Ingrese num2">
+        <button onclick="diferenciaValores(document.getElementById('num1').value , document.getElementById('num2').value)">Realizar Comparacion</button>
+        <span id="comparacion"></span>
+    </div>
+
+    <hr/>
+
+    <div>
+        <input type="text" id="texto1" placeholder="ingrese su nombre">
+        <input type="text" id="texto2" placeholder="Ingrese su apellido">
+        <button onclick="concatenarTextos(document.getElementById('texto1').value , document.getElementById('texto2').value)">Concatenar textos</button>
+        <p>Su nombre y apellido es = <span id="texto"></span></p>
+    </div>
+
+    <hr/>
+
+    <div>
+        <input type="number" id="monto" placeholder="Ingrese monto">
+        <input type="text" id="pago" placeholder="ingrese medio pago">
+        <button onclick="descuento(document.getElementById('monto').value) , descuento(document.getElementById('pago').value)">Efectuar pago</button>
+        <span id="medioPago"></span></p>
+    </div>
+
+    <hr/>
+
+    <div>
+        <input type="text" id="altura" onchange="medioArbol(document.getElementById('altura').value)">
+        <button onclick="medioarbol(document.getElementById('altura').value)">Altura del arbol</button>
+        <span id="arbol"></span>
+    </div>
+
+    <hr/>
+
+    <div>
+        <input type="number" id="numDia" >
+        <button id="" onclick="diaSemana(document.getElementById('numDia').value)" >Elige un numero</button>
+        <span id="nombreDia"></span>
+    </div>
+    
+    <hr/>
+
+    <div>
+<p id="ejemplo">En este párrafo se mostrará la opción clickada por el usuario</p>
+
+<button onclick="alerta()">Clicka para mostrar mensaje</button>
+    </div>
+
+    <div>
+        <span class="ejemplo"></span>
+        <button onclick="calcular()">click</button>
+    </div>
+</body>
+</html>
