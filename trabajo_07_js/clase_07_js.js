@@ -19,25 +19,25 @@ function concatenarTextos(val1, val2){
     document.getElementById("texto").innerHTML = texto;
 }
 
-function descuento(monto, pago){
-    pago = pago;
+function descuento(monto , Pago){
+   
     let montoPagar = 0;
         if(monto < 200){
-            montoPagar = monto;
-        
+        montoPagar = monto;        
     }else{
         if(monto>=200 && monto<400){ 
-         switch(pago){
+         switch(Pago){
              case 'E':
                  montoPagar = monto * 0.7;
                  break;
              case 'D':
-                montoPagar = monto * 0.8;
+                montoPagar= monto * 0.8;
                 break;
              case 'C':
                  montoPagar = monto * 0.9;
                  break;
                  default:
+                     montoPagar = "ERROR";
                  
                 } 
                 
@@ -47,7 +47,7 @@ function descuento(monto, pago){
             }  
                 
         }    
-      document.getElementById("medioPago").innerHTML = "<p>"+montoPagar+"</p>"  
+      document.getElementById("montoFinal").innerHTML = "<p>"+ montoPagar +"</p>"  
     }
     
 

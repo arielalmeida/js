@@ -30,7 +30,7 @@
     <div>
         <input type="text" id="texto1" placeholder="ingrese su nombre">
         <input type="text" id="texto2" placeholder="Ingrese su apellido">
-        <button onclick="concatenarTextos(document.getElementById('texto1').value , document.getElementById('texto2').value)">Concatenar textos</button>
+        <button onclick="concatenarTextos(document.getElementById('texto1').value , concatenarTextos(document.getElementById('texto2').value))">Concatenar textos</button>
         <p>Su nombre y apellido es = <span id="texto"></span></p>
     </div>
 
@@ -38,9 +38,9 @@
 
     <div>
         <input type="number" id="monto" placeholder="Ingrese monto">
-        <input type="text" id="pago" placeholder="ingrese medio pago">
-        <button onclick="descuento(document.getElementById('monto').value) , descuento(document.getElementById('pago').value)">Efectuar pago</button>
-        <span id="medioPago"></span></p>
+        <input type="text" id="Pago" placeholder="ingrese medio pago">
+        <button onclick = "descuento(document.getElementById('monto').value , document.getElementById('Pago').value)">Efectuar pago</button>
+        <span id="montoFinal"></span></p>
     </div>
 
     <hr/>
