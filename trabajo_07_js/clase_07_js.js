@@ -22,8 +22,10 @@ function concatenarTextos(val1, val2){
 function descuento(monto , Pago){
    
     let montoPagar = 0;
-        if(monto < 200){
-        montoPagar = monto;        
+        if(monto <= 200){
+        montoPagar = monto;
+        document.getElementById("montoFinal").innerHTML;
+
     }else{
         if(monto>=200 && monto<400){ 
          switch(Pago){
