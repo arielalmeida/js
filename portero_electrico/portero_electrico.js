@@ -30,6 +30,9 @@ function llamar(){
     }
 }
 
-function borrar(){
-    let piso =document.getElementById("pantalla1").innerHTML =
+function borrarDatos(){
+    document.getElementById('formulario1').reset('formulario1');
+    document.getElementById('formulario2').reset('formulario2');
+
+
 }
