@@ -14,14 +14,19 @@ function diferenciaValores(num1,num2){
         document.getElementById("comparacion").innerHTML = "<p>El numero "+num1+" es IGUAL a el numero "+num2+"</p>"
     }
 }
-function concatenarTextos(val1, val2){
-    let texto = val1 + val2;
-    document.getElementById("texto").innerHTML = texto;
+function concatenarTextos(){
+    let nombre = document.getElementById('texto1').value;
+    let apellido = document.getElementById('texto2').value;
+
+    document.getElementById('texto').innerHTML = "<p>Su nombre y apellido es "+nombre+" "+apellido+"</p>";
+    
 }
 
 function descuento(monto , Pago){
-   
     let montoPagar = 0;
+    const EFECTIVO = 'E';
+    const DEBITO = 'D';
+    const CREDITO = 'C';
         if(monto <= 200){
         montoPagar = monto;
         document.getElementById("montoFinal").innerHTML;

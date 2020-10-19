@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo_08_js</title>
+    <script src="trabajo_08_js.js"></script>
+</head>
+<body>
+    <form action="" id="formulario">
+        <label for="">Ingresa tu nombre</label>
+        <input id="nombre" type="text" placeholder="Nombre">
+        <label for="">Ingresa tu edad</label>
+        <input id="edad" type="number" placeholder="Edad">
+       <label for="">Ingresa tu email</label>
+        <input type="email" placeholder="Email">
+
+        <select name="" id="seleccion" onchange="cambiaOpciones()">
+            <option></option>
+            <option name="trabajador" value="0" id="trabajador">Trabajador</option>
+            <option name="estudiante" value="1" id="estudiante">Estudiante</option>
+        </select>
+
+        <select name="" id="" onclick="cambiaOpciones()">
+            <option value="3" id="trabajador_1"></option>
+        </select>
+
+        <button onclick="validarNombre(document.getElementById('nombre').value), validarEdad(document.getElementById('edad').value)">Enviar Formulario</button>
+        
+
+    </form>
+</body>
+</html>
