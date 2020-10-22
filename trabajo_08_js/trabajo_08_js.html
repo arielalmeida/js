@@ -15,19 +15,21 @@
        <label for="">Ingresa tu email</label>
         <input type="email" placeholder="Email">
 
-        <select name="" id="seleccion" onchange="cambiaOpciones()">
+        <select name="" id="seleccion" onchange="cambiaOpciones()" >
             <option></option>
-            <option name="trabajador" value="0" id="trabajador">Trabajador</option>
+            <option name="trabajador" value="0" id="trabajador" >Trabajador</option>
             <option name="estudiante" value="1" id="estudiante">Estudiante</option>
         </select>
 
-        <select name="" id="" onclick="cambiaOpciones()">
-            <option value="3" id="trabajador_1"></option>
+        <select name="" id="cambioContenido">
+            <option name="1" value="1"id="cam0"></option>
+            <option name="2" value="2"id="cam1"></option>
+            <option name="3" value="3"id="cam2"></option>
+            <option name="4" value="4"id="cam3"></option>
         </select>
 
-        <button onclick="validarNombre(document.getElementById('nombre').value), validarEdad(document.getElementById('edad').value)">Enviar Formulario</button>
-        
-
+        <button onclick="validarNombre(document.getElementById('nombre').value), validarEdad(document.getElementById('edad').value), cambiaOpciones()">Enviar Formulario</button>
     </form>
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </body>
 </html>
