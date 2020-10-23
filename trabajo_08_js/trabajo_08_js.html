@@ -28,16 +28,25 @@
         </div>    
 
         <div class="form-group text-center bg-light">
-            <select class="custom-select my-4 mr-sm-2 text-center" id="seleccion" onchange="cambiaOpciones()" >
+            <select class="custom-select my-4 mr-sm-2 text-center" id="seleccion" onchange="$('#seleccion1').toggle();">
                 <option></option>
                 <option name="trabajador" value="0" id="trabajador">Trabajador</option>
-                <option name="estudiante" value="1" id="estudiante">Estudiante</option>
+                <option name="estudiante" value="1" id="estudiante" onclick="cambiaOpciones()">Estudiante</option>
             </select>
         </div>
 
-        <div class="form-group text-center bg-light">
-            <select class="custom-select my-4 mr-sm-2 text-center" name="" id="seleccion" onchange="cambiaOpciones()" >
-                <option id="1"></option>
+        <div class="form-group text-center bg-light" id="seleccion1" style="display: none;">
+            <select class="custom-select my-4 mr-sm-2 text-center">
+                <option>---------</option>
+                <option>Monotributista</option>
+                <option>Relacion de dependencia</option>
+                <option>Informal</option>
+            </select>
+        </div>
+
+        <div class="form-group text-center bg-light" id="seleccion2"style="display:none;">
+            <select class="custom-select my-4 mr-sm-2 text-center">
+                <option id="1">---------</option>
                 <option id="2"></option>
                 <option id="3"></option>
                 <option id="4"></option>

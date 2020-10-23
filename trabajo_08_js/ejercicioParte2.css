@@ -1,0 +1,14 @@
+div{
+    text-align: center;
+    
+}
+button{
+    width: 30em;
+    height: 10em;
+    border:none;
+}
+a{
+    font-size: 6em;
+    text-decoration: none;
+    padding-right: 70px;
+}

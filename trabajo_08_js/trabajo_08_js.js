@@ -13,12 +13,12 @@ function validarEdad(edad){
   
 function cambiaOpciones(){
   
-  let trabajador = document.getElementById('trabajador').value;
+  
   let estudiante = document.getElementById('estudiante').value;
-        if(trabajador==0){
+        if(estudiante==0){
        document.getElementById('1').innerHTML = "-----";
-       document.getElementById('2').innerHTML = "monotributista";
-       document.getElementById('3').innerHTML = "relacion de Dependencia";
-       document.getElementById('4').innerHTML = "informal";
+       document.getElementById('2').innerHTML = "-----";
+       document.getElementById('3').innerHTML = "-----";
+       document.getElementById('4').innerHTML = "-----";
         }
      }

@@ -1,8 +1,12 @@
+var nombre= prompt("ingresa tu nombre");
+document.cookie= "usuario ="+nombre;
+var estado = document.cookie;
+
 function cookies(){
     var nuevoDato = nuevoDato();
     nuevoDato(nuevoDato.getTime() + (exdays *24*60*60*3000));
     var expira = "expira" + nuevoDato.toUTCString();
-    document.cookie
+    document.cookie = name + "=" +value + "," +expires +"path=/";
 
 }
 
